@@ -8,18 +8,18 @@ const launchScreenstyle = StyleSheet.create({
   },
   safearealaunchpress: {
     flexDirection: "row",
-	  gap: 10,
-	alignItems:'center'
+    gap: 10,
+    alignItems: "center",
   },
   launctext9ja: {
     fontSize: 50,
     fontWeight: "500",
-    color: "#88C386",
+    color: "#068103",
   },
   launctext: {
     fontSize: 30,
     fontWeight: "500",
-    color: "#88C386",
+    color: "#068103",
   },
 });
 
