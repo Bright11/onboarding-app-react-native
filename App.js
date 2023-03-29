@@ -1,12 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import LaunchScreen from './src/launchscreen/LaunchScreen';
+import { useFonts } from "expo-font";
 export default function App() {
+   const [fontsLoaded] = useFonts({
+     "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+     
+   });
+
+   if (!fontsLoaded) return null;
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <SafeAreaView>
+    //   <LaunchScreen />
+    // </SafeAreaView>
+    <LaunchScreen />
   );
 }
 
