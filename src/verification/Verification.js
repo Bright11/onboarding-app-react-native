@@ -1,10 +1,15 @@
 import { KeyboardAvoidingView, Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import verificationstyle from './verificationstyle';
 import { SafeAreaView } from 'react-native';
 
-const Verification = () => {
-	//verification screen
+const Verification = ({ navigation }) => {
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      title: "Verification code",
+    });
+  }, [navigation]);
+  //verification screen
   return (
     <SafeAreaView style={verificationstyle.verificationsafeview}>
       <View style={verificationstyle.verificationviews}>
@@ -34,17 +39,15 @@ const Verification = () => {
         </View>
         <KeyboardAvoidingView>
           <View style={verificationstyle.submitbtn}>
-            <Pressable>
-              <Text style={verificationstyle.codetextsubmit}>
-              Verify
-              </Text>
+            <Pressable onPress={() => navigation.replace("Home")}>
+              <Text style={verificationstyle.codetextsubmit}>Verify</Text>
             </Pressable>
           </View>
         </KeyboardAvoidingView>
       </View>
     </SafeAreaView>
   );
-}
+};
 
 export default Verification
 

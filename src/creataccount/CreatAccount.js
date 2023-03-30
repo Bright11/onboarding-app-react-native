@@ -7,7 +7,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons"; 
 import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons"; 
-const CreatAccount = () => {
+const CreatAccount = ({ navigation }) => {
   // for the icons, i make use of vector icons
   return (
     <SafeAreaView style={creatAccountstyle.creatAccountsafeview}>
@@ -57,7 +57,7 @@ const CreatAccount = () => {
               />
             </View>
             <View style={creatAccountstyle.sumbitview}>
-              <Pressable>
+              <Pressable onPress={() => navigation.replace("login")}>
                 <Text style={creatAccountstyle.submittext}>Create Account</Text>
               </Pressable>
             </View>
@@ -81,14 +81,14 @@ const CreatAccount = () => {
           <Pressable>
             <Text style={creatAccountstyle.noaccounttext}>
               Already have an account?{" "}
-              <Text style={creatAccountstyle.signuptext}>Sign up</Text>
+              <Text style={creatAccountstyle.signuptext}>Sign in</Text>
             </Text>
           </Pressable>
         </View>
       </ScrollView>
     </SafeAreaView>
   );
-}
+};
 
 export default CreatAccount
 

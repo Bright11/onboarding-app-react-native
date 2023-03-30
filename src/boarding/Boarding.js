@@ -11,7 +11,7 @@ const Boarding = ({ Done }) => (
   <Onboarding
     // naviget when skip
     onSkip={() => {
-      Alert.alert("hi", "Skip");
+      Alert.alert("Warning", "don't skip, please next");
     }}
     titleStyles={{ color: "black" }}
     subTitleStyles={{ color: "black", marginBottom: 300 }}
@@ -27,9 +27,10 @@ const Boarding = ({ Done }) => (
     bottomBarHeight={50}
     showPagination={true}
     bottomBarColor="#037F00"
-    DoneButtonComponent={Done}
+    DoneButtonComponent={Done} //we pass the Done to display it
     pages={[
       {
+        backgroundColor: "#999",
         image: (
           <Image
             style={onboardingstyle.onboardimg}
@@ -40,18 +41,18 @@ const Boarding = ({ Done }) => (
         subtitle: "Shop on the way",
       },
       {
-       
+        backgroundColor: "#999",
         image: (
-          
           <Image
             style={onboardingstyle.onboardimg}
             source={require("./images/img2.jpg")}
           />
         ),
         title: "Place Your Order",
-        subtitle: "Feel the test it quality",
+        subtitle: "Feel the test of it quality",
       },
       {
+        backgroundColor: "#999",
         image: (
           <Image
             style={onboardingstyle.onboardimg}

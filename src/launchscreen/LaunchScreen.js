@@ -7,16 +7,19 @@ import { useFonts } from "expo-font";
 // launch screen
 // getting font ready to be used
 
-const LaunchScreen = () => {
-	 const [fontsLoaded] = useFonts({
-     "Roboto-Regular": require("../../assets/fonts/Roboto-Regular.ttf"),
-   });
+const LaunchScreen = ({ navigation }) => {
+  const [fontsLoaded] = useFonts({
+    "Roboto-Regular": require("../../assets/fonts/Roboto-Regular.ttf"),
+  });
 
-// 	if (!fontsLoaded) return null;
+  // 	if (!fontsLoaded) return null;
 
   return (
     <SafeAreaView style={launchScreenstyle.safearealaunchview}>
-      <Pressable style={launchScreenstyle.safearealaunchpress}>
+      <Pressable
+        onPress={() => navigation.replace("onboard")}
+        style={launchScreenstyle.safearealaunchpress}
+      >
         <Text
           style={{
             ...launchScreenstyle.launctext9ja,
@@ -30,14 +33,13 @@ const LaunchScreen = () => {
             ...launchScreenstyle.launctext,
             fontFamily: "Roboto-Regular",
           }}
-         
         >
           foods
         </Text>
       </Pressable>
     </SafeAreaView>
   );
-}
+};
 
 export default LaunchScreen
 

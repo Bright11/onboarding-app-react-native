@@ -3,10 +3,10 @@ import React from 'react'
 import Boarding from "./Boarding";
 import onboardingstyle from './images/onboardingstyle';
 import { TouchableOpacity } from 'react-native';
-// import Onboarding from "react-native-onboarding-swiper";
+
 import { Alert } from 'react-native';
 
-const OnBoardingScreen = () => {
+const OnBoardingScreen = ({navigation}) => {
   // customizing done botton and passing it as props 
   const Done = () => (
     <TouchableOpacity
@@ -19,8 +19,9 @@ const OnBoardingScreen = () => {
     </TouchableOpacity>
   );
   const pressdon = () => {
-    alert('hi don')
+   navigation.replace("createaccount");
   }
+  //the pressdon will be passed as a props to the borading
 	return (
     <SafeAreaView style={{flex:1/1,marginTop:20}}>
       <View style={onboardingstyle.view__content}>

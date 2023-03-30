@@ -8,7 +8,7 @@ import {
   TextInput,
   View,
 } from "react-native";
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import creatAccountstyle from "./creatAccountstyle";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -16,8 +16,9 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
-const Login = () => {
+const Login = ({ navigation }) => {
   // for the icons, i make use of vector icons
+ 
   return (
     <SafeAreaView style={creatAccountstyle.creatAccountsafeview}>
       <ScrollView style={creatAccountstyle.creatAccountinputview}>
@@ -43,8 +44,8 @@ const Login = () => {
             </View>
 
             <View style={creatAccountstyle.sumbitview}>
-              <Pressable>
-                <Text style={creatAccountstyle.submittext}>Create Account</Text>
+              <Pressable onPress={() => navigation.navigate("verify")}>
+                <Text style={creatAccountstyle.submittext}>Login</Text>
               </Pressable>
             </View>
             <View style={creatAccountstyle.orview}>
