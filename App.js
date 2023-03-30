@@ -19,15 +19,14 @@ export default function App() {
 
    if (!fontsLoaded) return null;
   return (
-   
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        {/* <Stack.Screen name="login" component={Login} />
+      <Stack.Navigator initialRouteName="launch">
+        <Stack.Screen name="login" component={Login} />
         <Stack.Screen name="verify" component={Verification} />
         <Stack.Screen name="onboard" component={OnBoardingScreen} />
         <Stack.Screen name="createaccount" component={CreatAccount} />
-        <Stack.Screen name="launch" component={LaunchScreen} /> */}
-          <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="launch" component={LaunchScreen} />
+        <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );

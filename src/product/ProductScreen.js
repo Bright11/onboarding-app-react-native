@@ -1,20 +1,19 @@
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import productstyle from './productstyle';
-import { FontAwesome } from "@expo/vector-icons"; 
-import { Entypo } from "@expo/vector-icons"; 
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
+import productstyle from "./productstyle";
+import { FontAwesome } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 //importing font
 import { useFonts } from "expo-font";
-import { TextInput } from 'react-native-paper';
-import Category from './category/Category';
-import Resturants from './resturants/Resturants';
-import Items from './item/Items';
+import { TextInput } from "react-native-paper";
+import Category from "./category/Category";
+import Resturants from "./resturants/Resturants";
+import Items from "./item/Items";
 
 //the end
 // launch screen
 const ProductScreen = () => {
-
   const [fontsLoaded] = useFonts({
     "Roboto-Regular": require("../../assets/fonts/Roboto-Regular.ttf"),
   });
@@ -71,8 +70,8 @@ const ProductScreen = () => {
       </ScrollView>
     </SafeAreaView>
   );
-}
+};
 
-export default ProductScreen
+export default ProductScreen;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

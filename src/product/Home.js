@@ -1,15 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React, { useLayoutEffect } from 'react'
+import { StyleSheet, Text, View } from "react-native";
+import React, { useLayoutEffect } from "react";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import ProductScreen from './ProductScreen';
-import { MaterialCommunityIcons } from "@expo/vector-icons"; 
-import { EvilIcons } from "@expo/vector-icons"; 
-import { Feather } from "@expo/vector-icons"; 
-import { Ionicons } from "@expo/vector-icons"; 
+import ProductScreen from "./ProductScreen";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { EvilIcons } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
-import Profile from './profile/Profile';
-import Cart from './cart/Cart';
-import WhishList from './wishlist/WhishList';
+import Profile from "./profile/Profile";
+import Cart from "./cart/Cart";
+import WhishList from "./wishlist/WhishList";
 const Tab = createMaterialBottomTabNavigator();
 const Home = ({ navigation }) => {
   useLayoutEffect(() => {
@@ -22,8 +22,7 @@ const Home = ({ navigation }) => {
       ),
       headerLeft: () => (
         <View>
-			  <EvilIcons name="navicon" size={24} color="black" />
-			 
+          <EvilIcons name="navicon" size={24} color="black" />
         </View>
       ),
     });
@@ -88,6 +87,6 @@ const Home = ({ navigation }) => {
   );
 };
 
-export default Home
+export default Home;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
