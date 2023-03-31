@@ -1,10 +1,16 @@
-import { FlatList, Pressable, StyleSheet,Image, Text, View } from 'react-native'
-import React from 'react'
-import resturantdata from '../resturants/resturantdata';
-import itemstyle from './itemstyle';
+import {
+  FlatList,
+  Pressable,
+  StyleSheet,
+  Image,
+  Text,
+  View,
+} from "react-native";
+import React from "react";
+import resturantdata from "../resturants/resturantdata";
+import itemstyle from "./itemstyle";
 import { useFonts } from "expo-font";
 const Items = ({ navigation }) => {
-
   const [fontsLoaded] = useFonts({
     "Roboto-Regular": require("../../../assets/fonts/Roboto-Italic.ttf"),
   });
@@ -38,6 +44,6 @@ const Items = ({ navigation }) => {
   );
 };
 
-export default Items
+export default Items;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

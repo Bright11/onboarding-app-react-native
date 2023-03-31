@@ -1,17 +1,16 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
-import React, { useState } from 'react'
-import { FlatList } from 'react-native';
-import categorydata from './categorydata';
-import categorystyle from './categorystyle';
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { FlatList } from "react-native";
+import categorydata from "./categorydata";
+import categorystyle from "./categorystyle";
 //importing font
 import { useFonts } from "expo-font";
 const Category = () => {
-	const [pressed, setPressed] = useState(null);
+  const [pressed, setPressed] = useState(null);
   const changecolor = (cat) => {
-   
     setPressed(cat.name);
-	};
-	const [fontsLoaded] = useFonts({
+  };
+  const [fontsLoaded] = useFonts({
     "Roboto-Regular": require("../../../assets/fonts/Roboto-Regular.ttf"),
   });
   return (
@@ -57,8 +56,8 @@ const Category = () => {
       keyExtractor={(item) => item.id}
     />
   );
-}
+};
 
-export default Category
+export default Category;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

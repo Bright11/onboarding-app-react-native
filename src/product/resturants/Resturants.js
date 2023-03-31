@@ -1,7 +1,14 @@
-import { FlatList, Pressable, Image,StyleSheet, Text, View } from "react-native";
+import {
+  FlatList,
+  Pressable,
+  Image,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 import resturantdata from "./resturantdata";
-import resturantstyle from './resturantstyle';
+import resturantstyle from "./resturantstyle";
 
 const Resturants = () => {
   return (
@@ -18,9 +25,8 @@ const Resturants = () => {
                 style={resturantstyle.rinsturaantimg}
                 source={item.image}
               />
-             
-				  <View style={resturantstyle.rinsturanameview}>
-					  
+
+              <View style={resturantstyle.rinsturanameview}>
                 <Text style={resturantstyle.rinsturaantname}>
                   #{item.price}
                 </Text>

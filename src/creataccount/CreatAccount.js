@@ -1,12 +1,21 @@
-import { KeyboardAvoidingView, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native'
-import React from 'react'
-import creatAccountstyle from './creatAccountstyle';
+import {
+  KeyboardAvoidingView,
+  Pressable,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
+import React from "react";
+import creatAccountstyle from "./creatAccountstyle";
 import { Feather } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons"; 
-import { MaterialIcons } from "@expo/vector-icons"; 
-import { FontAwesome5 } from "@expo/vector-icons"; 
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons"; 
+import { AntDesign } from "@expo/vector-icons";
 const CreatAccount = ({ navigation }) => {
   // for the icons, i make use of vector icons
   return (
@@ -90,6 +99,6 @@ const CreatAccount = ({ navigation }) => {
   );
 };
 
-export default CreatAccount
+export default CreatAccount;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

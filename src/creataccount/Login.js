@@ -18,7 +18,7 @@ import { Entypo } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 const Login = ({ navigation }) => {
   // for the icons, i make use of vector icons
- 
+
   return (
     <SafeAreaView style={creatAccountstyle.creatAccountsafeview}>
       <ScrollView style={creatAccountstyle.creatAccountinputview}>

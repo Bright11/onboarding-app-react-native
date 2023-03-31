@@ -1,23 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import LaunchScreen from './src/launchscreen/LaunchScreen';
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import LaunchScreen from "./src/launchscreen/LaunchScreen";
 import { useFonts } from "expo-font";
-import OnBoardingScreen from './src/boarding/OnBoardingScreen';
-import CreatAccount from './src/creataccount/CreatAccount';
-import Verification from './src/verification/Verification';
+import OnBoardingScreen from "./src/boarding/OnBoardingScreen";
+import CreatAccount from "./src/creataccount/CreatAccount";
+import Verification from "./src/verification/Verification";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Login from './src/creataccount/Login';
-import Home from './src/product/Home';
+import Login from "./src/creataccount/Login";
+import Home from "./src/product/Home";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
-   const [fontsLoaded] = useFonts({
-     "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
-     
-   });
+  const [fontsLoaded] = useFonts({
+    "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+  });
 
-   if (!fontsLoaded) return null;
+  if (!fontsLoaded) return null;
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="launch">
@@ -32,11 +31,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

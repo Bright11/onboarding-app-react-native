@@ -1,7 +1,14 @@
-import { KeyboardAvoidingView, Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
-import React, { useLayoutEffect } from 'react'
-import verificationstyle from './verificationstyle';
-import { SafeAreaView } from 'react-native';
+import {
+  KeyboardAvoidingView,
+  Pressable,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+} from "react-native";
+import React, { useLayoutEffect } from "react";
+import verificationstyle from "./verificationstyle";
+import { SafeAreaView } from "react-native";
 
 const Verification = ({ navigation }) => {
   useLayoutEffect(() => {
@@ -49,6 +56,6 @@ const Verification = ({ navigation }) => {
   );
 };
 
-export default Verification
+export default Verification;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

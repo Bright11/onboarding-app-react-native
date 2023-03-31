@@ -1,5 +1,4 @@
-
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 const creatAccountstyle = StyleSheet.create({
   creatAccountsafeview: {
     flex: 1,
@@ -65,10 +64,10 @@ const creatAccountstyle = StyleSheet.create({
     fontSize: 15,
     fontWeight: "300",
   },
-	signuptext: {
-		fontSize: 20,
-		fontWeight:"500"
+  signuptext: {
+    fontSize: 20,
+    fontWeight: "500",
   },
 });
 
-export default creatAccountstyle
+export default creatAccountstyle;

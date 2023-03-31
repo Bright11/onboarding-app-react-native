@@ -1,6 +1,6 @@
-import { Pressable, SafeAreaView, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import launchScreenstyle from './launchScreenstyle';
+import { Pressable, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import launchScreenstyle from "./launchScreenstyle";
 //importing font
 import { useFonts } from "expo-font";
 //the end
@@ -41,5 +41,4 @@ const LaunchScreen = ({ navigation }) => {
   );
 };
 
-export default LaunchScreen
-
+export default LaunchScreen;
